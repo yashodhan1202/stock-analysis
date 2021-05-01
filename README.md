@@ -1,8 +1,7 @@
 # stock-analysis
 
 ## Overview of Project
-   The dataset contains stock prices for 12 different stocks and Steve knows how to analyze the stock performance for his parents by a click of a button.
-   He likes the code that we have written for him. But we still feel that the code can be written in a much cleaner way which is easy to understand and which is faster to          execute. 	
+   The dataset contains stock prices for 12 different stocks and Steve knows how to analyze the stock performance for his parents by a click of a button. He likes the code that    was written for him. But the code can be written in a much cleaner way which is easy to understand and which is faster to execute. 	
 
 ### Purpose
    The purpose of this project is to refactor the Microsoft Excel VBA code that was written to collect stock performance for 12 stocks for the years 2017 and 2018 and make
@@ -14,6 +13,9 @@
 ### Analysis
 The existing written code was analyzing stock information in the 0.1953125 seconds for year 2017 and 0.1875 seconds for year 2018.
 
+![VBA_Challenge_2017 (Original)](https://github.com/yashodhan1202/stock-analysis/blob/main/VBA_Challenge_2017%20(Original).png)
+
+![VBA_Challenge_2018 (Original)](https://github.com/yashodhan1202/stock-analysis/blob/main/VBA_Challenge_2018%20(Original).png)
 
 The approach taken to refactor the code was as follows :-
     
@@ -73,17 +75,28 @@ The approach taken to refactor the code was as follows :-
 
 ## Results
 
-After refactoring the code the runtime was 0.1679688 seconds for year 2017 and 0.1796875 seconds for year 2018. Below are the screenshots of before and after refactoring of the code.
-The reduction in runtime is 0.0273437 and 0.0078125 for the years 2017 and 2018 respectively.The stock performance results were matched and rechecked thoroughly with the original code.
-We went an extra step to analyze the refactored written by putting a break at the "Next i" before point 4 in the above code and executing the code 251 times manually in the locals window
-to see if the ending price is being populated for ticker(0) when "i" is 252. Here is the screen shot of the locals window  
+After refactoring the code the runtime was 0.1679688 seconds for year 2017 and 0.1796875 seconds for year 2018. Below are the screenshots of runtime after refactoring of the code :-
+
+![VBA_Challenge_2017](https://github.com/yashodhan1202/stock-analysis/blob/main/VBA_Challenge_2017.png)
+
+![VBA_Challenge_2018](https://github.com/yashodhan1202/stock-analysis/blob/main/VBA_Challenge_2018.png)
+
+The reduction in runtime was 0.0273437 and 0.0078125 for the years 2017 and 2018 respectively.The stock performance results were matched and rechecked thoroughly with the original code.
+
+![Stock_Performance_2017](https://github.com/yashodhan1202/stock-analysis/blob/main/Stock_Performance_2017.png)
+
+![Stock_Performance_2018](https://github.com/yashodhan1202/stock-analysis/blob/main/Stock_Performance_2018.png
+
+An extra step was taken to analyze the refactored written by putting a break at the "Next i" before point 4 in the above code and executing the code 251 times manually in the locals window to see if the ending price is being populated for ticker(0) when "i" is 252. Here is the screen shot of the locals window :-
+
+![Ticker_num_screenshot1](https://github.com/yashodhan1202/stock-analysis/blob/main/Ticker_num_screenshot1.png)
+![Ticker_num_screenshot2](https://github.com/yashodhan1202/stock-analysis/blob/main/Ticker_num_screenshot2.png)
 
 ## Summary
 
 ### Advantages of refactoring
  - The code can be made efficient by refactoring an existing code. This is evident in the lesser number of seconds taken to execute the code and give the results.
- - The code can be made cleaner by adding comments which VBA ignores in executing the codes. The comments act like stones from the Hansel and Gretel story incase we lose our way and forget 
-   after a period of time and have to look back
+ - The code can be made cleaner by adding comments which VBA ignores in executing the codes. The comments act like stones from the Hansel and Gretel story incase we lose our way    and forget after a period of time and have to look back
 
 ### Disadvantages of refactoring 
  - Refactoring is using someone else's code. If not done properly the code can be inefficient and can render a perfectly running code inefficient and difficult to understand.
@@ -94,5 +107,4 @@ to see if the ending price is being populated for ticker(0) when "i" is 252. Her
  - Since arrays were used they could be used in the code instead of calculating through a code in itself.
 
 ### Disadvantages of refactored code
- - There were no disadvantages noticed in the refactored code as the results were exactly the same as before and the runtime was faster than the previous one. Since this was the first time
-   we were refactoring the code it was a bit time consuming to write an efficient code.
+ - There were no disadvantages noticed in the refactored code as the results were exactly the same as before and the runtime was faster than the previous one. Since this was the    first time I was refactoring the code, it was a bit time consuming to write an efficient code which would give the same results as before.
