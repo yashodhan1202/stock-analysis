@@ -85,7 +85,7 @@ The reduction in runtime was 0.0273437 and 0.0078125 for the years 2017 and 2018
 
 ![Stock_Performance_2017](https://github.com/yashodhan1202/stock-analysis/blob/main/Stock_Performance_2017.png)
 
-![Stock_Performance_2018](https://github.com/yashodhan1202/stock-analysis/blob/main/Stock_Performance_2018.png
+![Stock_Performance_2018](https://github.com/yashodhan1202/stock-analysis/blob/main/Stock_Performance_2018.png)
 
 An extra step was taken to analyze the refactored written by putting a break at the "Next i" before point 4 in the above code and executing the code 251 times manually in the locals window to see if the ending price is being populated for ticker(0) when "i" is 252. Here is the screen shot of the locals window :-
 
